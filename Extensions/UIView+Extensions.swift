@@ -23,4 +23,10 @@ public extension UIView {
         trailingConstraint.isActive = true
         return (topConstraint, bottomConstraint, leadingConstraint, trailingConstraint)
     }
+    
+    func removeAllSubviews() {
+        subviews.forEach { subview in
+            subview.removeFromSuperview()
+        }
+    }
 }
