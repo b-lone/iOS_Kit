@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'iOS_Kit_Example' do
+  pod 'iOS_Kit', :path => '../'
+
+  target 'iOS_Kit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
