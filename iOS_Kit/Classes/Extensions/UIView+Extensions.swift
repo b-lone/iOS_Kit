@@ -29,4 +29,7 @@ public extension UIView {
             subview.removeFromSuperview()
         }
     }
+    
+    var width: CGFloat { bounds.width }
+    var height: CGFloat { bounds.height }
 }
